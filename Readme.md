@@ -40,7 +40,7 @@ To serve the `build` file on server run
 
 ```bash
 # serve the build file
-$ serve -S build
+$ serve -S build -p 8080
 ```
 
 ## Test

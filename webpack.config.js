@@ -13,6 +13,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Simplex code challenge",
       template: "./public/index.html",
+      inject: false,
+      configFile: '/rivraddon.js'
     }),
   ],
   module: {
@@ -31,7 +33,7 @@ module.exports = {
       {
         test: require.resolve(__dirname + "/src/index.js"),
         loader: "expose-loader",
-        options: 'rivraddon'
+        options: "rivraddon",
       },
     ],
   },
